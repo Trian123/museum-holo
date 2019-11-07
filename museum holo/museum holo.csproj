@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CE9821E1-869D-4C9B-AA5D-0906363283B7}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>museum_holo</RootNamespace>
+    <AssemblyName>museum holo</AssemblyName>
+    <DefaultLanguage>en-us</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>HoloUrho_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Data\ANGKLUNG\TEXTURE\angklung.png" />
+    <Content Include="Data\ANOTASI\TEXTURE\ANOTASI MR BIOLA.png" />
+    <Content Include="Data\ARUMBA\TEXTURE\arumba.png" />
+    <Content Include="Data\ARUMBA\TEXTURE\pemukul arumba.png" />
+    <Content Include="Data\CELLO\TEXTURE\cello.png" />
+    <Content Include="Data\FLUTE\TEXTURE\flute.png" />
+    <Content Include="Data\GITAR\TEXTURE\guitar.png" />
+    <Content Include="Data\judul\TITTLE.png" />
+    <Content Include="Data\MUSIC\Anthem.mp3" />
+    <Content Include="Data\PIANO\TEXTURE\piano.png" />
+    <Content Include="Data\SERULING\TEXTURE\seruling.png" />
+    <Content Include="Data\SPRITE\Fboy.png" />
+    <Content Include="Data\SPRITE\pointer.png" />
+    <Content Include="Data\TRUMPET\TEXTURE\trumpet.png" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG1.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG2.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG3.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG4.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG5.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG6.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG7.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG8.mdl" />
+    <Content Include="Data\ANGKLUNG\MODELS\AKG9.mdl" />
+    <Content Include="Data\FLUTE\MODEL\FLUTE.mdl" />
+    <Content Include="Data\GITAR\GITAR.mdl" />
+    <Content Include="Data\TRUMPET\MODEL\TRUMPET.mdl" />
+    <Content Include="Data\VIOLIN\MODEL\VIOLIN.mdl" />
+    <Content Include="Data\ARUMBA\MODEL\ARUMBA.mdl" />
+    <Content Include="Data\PIANO\MODEL\PIANO.mdl" />
+    <Content Include="Data\ARUMBA\MODEL\pemukularumba.mdl" />
+    <Content Include="Data\CELLO\MODEL\CELLO.mdl" />
+    <Content Include="Data\ANOTASI\FLUTE\CLOSE\CLOSE FLUTE.mdl" />
+    <Content Include="Data\ANOTASI\FLUTE\INFORMASI FLUTE.001.mdl" />
+    <Content Include="Data\ANOTASI\FLUTE\JUDUL_INFORMASI_FLUTE.mdl" />
+    <Content Include="Data\ANOTASI\PIANO\JUDUL PIANO.mdl" />
+    <Content Include="Data\ANOTASI\PIANO\MAIN PIANO.mdl" />
+    <Content Include="Data\ANOTASI\PIANO\CLOSE\X PIANO.mdl" />
+    <Content Include="Data\ANOTASI\TRUMPET\judul terompet.mdl" />
+    <Content Include="Data\ANOTASI\TRUMPET\main terompet.mdl" />
+    <Content Include="Data\ANOTASI\TRUMPET\CLOSE\x terompet.mdl" />
+    <Content Include="Data\ANOTASI\BIOLA\JUDUL BIOLA.mdl" />
+    <Content Include="Data\ANOTASI\BIOLA\MAIN BIOLA.mdl" />
+    <Content Include="Data\ANOTASI\BIOLA\CLOSE\X BIOLA.mdl" />
+    <Content Include="Data\ANOTASI\GITAR\GITAR INFORMASI.mdl" />
+    <Content Include="Data\ANOTASI\GITAR\GITAR JUDUL INFORMASI.mdl" />
+    <Content Include="Data\ANOTASI\GITAR\CLOSE\X GITAR.mdl" />
+    <Content Include="Data\ANOTASI\CELLO\CLOSE\X SELO.mdl" />
+    <Content Include="Data\ANOTASI\CELLO\JUDUL SELO.mdl" />
+    <Content Include="Data\ANOTASI\CELLO\MAIN SELO.mdl" />
+    <Content Include="Data\ANOTASI\SERULING\JUDUL SULING BAMBU.mdl" />
+    <Content Include="Data\ANOTASI\SERULING\MAIN SULING BAMBU.mdl" />
+    <Content Include="Data\ANOTASI\SERULING\CLOSE\X SULING BAMBU.mdl" />
+    <Content Include="Data\SERULING\MODEL\SERULING.mdl" />
+    <Content Include="Data\ANOTASI\ARUMBA\judul arumba.mdl" />
+    <Content Include="Data\ANOTASI\ARUMBA\main arumba.mdl" />
+    <Content Include="Data\ANOTASI\ARUMBA\CLOSE\x arumba.mdl" />
+    <Content Include="Data\ANOTASI\ANGKLUNG\INFORMASI ANGKLUNG.mdl" />
+    <Content Include="Data\ANOTASI\ANGKLUNG\JUDUL INFORMASI ANGKLUNG.mdl" />
+    <Content Include="Data\ANOTASI\ANGKLUNG\CLOSE\x angklung.mdl" />
+    <Content Include="Data\ANGKLUNG\AKG 5.mdl" />
+    <None Include="Data\baru\GITAR JUDUL INFORMASI.mdl" />
+    <None Include="Data\baru\judul arumba.mdl" />
+    <Content Include="Data\baru\JUDUL BIOLA.mdl" />
+    <None Include="Data\baru\JUDUL INFORMASI ANGKLUNG.mdl" />
+    <None Include="Data\baru\JUDUL PIANO.mdl" />
+    <None Include="Data\baru\JUDUL SELO.mdl" />
+    <None Include="Data\baru\JUDUL SULING BAMBU.mdl" />
+    <None Include="Data\baru\judul terompet.mdl" />
+    <None Include="Data\baru\JUDUL_INFORMASI.mdl" />
+    <Content Include="Data\judul\Plane.mdl" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Textures\Earth.jpg" />
+    <Content Include="Data\Textures\License.txt" />
+    <Content Include="Data\Textures\Mars.jpg" />
+    <Content Include="Data\Textures\Moon.jpg" />
+    <Content Include="Data\VIOLIN\TEXTURE\violin.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\TRUMPET\ANIMATION\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP;CODE_ANALYSIS</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;CODE_ANALYSIS</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s). NuGet Package Restore will attempt to automatically find or download them when you build this project in Visual Studio. For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(ProjectDir)\project.lock.json')" Text="$([System.String]::Format('$(ErrorText)', 'project.lock.json'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
+  </PropertyGroup>
+</Project>
